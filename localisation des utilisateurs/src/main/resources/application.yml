@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: localisation-des-utilisateurs
+  datasource:
+    url: jdbc:mysql://localhost:3309/positions  # Utilisation du port mappé 3309
+    username: root
+    password: root  # Assurez-vous de mettre un mot de passe
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
